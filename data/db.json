@@ -1,0 +1,22 @@
+{
+  "characters": [
+    {
+      "id": "1",
+      "name": "luffy",
+      "media": "One Piece",
+      "story":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "2",
+      "name": "Zoro",
+      "media": "One Piece",
+      "story":"bbbbbbbbbbbbbbbb"
+    },
+    {
+      "id": "3",
+      "name": "Usopp",
+      "media": "One Piece",
+      "story":"xxxxxxxxxxxxxxxxxxxxxx"
+    }
+  ]
+}
