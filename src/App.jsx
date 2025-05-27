@@ -3,7 +3,7 @@ import { useState } from "react";
 import ModalStory from "./components/ModalStory";
 import { useFetch } from "./hooks/useFetch";
 
-const url = "http://localhost:3000/characters";
+const url = "https://6835be8fcd78db2058c2f60b.mockapi.io/characters";
 
 function App() {
   const { data: chars, loading } = useFetch(url);
