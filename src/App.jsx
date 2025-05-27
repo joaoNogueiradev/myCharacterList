@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import "./App.css";
+import "./App.css";
 import ModalStory from "./components/ModalStory";
 import { useFetch } from "./hooks/useFetch";
 
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className="character-list">
+      <div>
         {loading && <p>Carregando dados...</p>}
         {!loading && (
           <ul>
@@ -27,9 +27,9 @@ function App() {
                       setOpenModal(true);
                       setSelectedCharacter(character);
                     }}
+                    className="text-xl"
                   >
                     {character.name} - {character.media}
-                    <div></div>
                   </li>
                 );
               })}
