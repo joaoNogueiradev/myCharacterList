@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="h-screen flex items-center text-center justify-center">
         {loading && <p>Carregando dados...</p>}
         {!loading && (
           <ul>
@@ -27,9 +27,9 @@ function App() {
                       setOpenModal(true);
                       setSelectedCharacter(character);
                     }}
-                    className="text-xl"
+                    className="text-xl cursor-pointer"
                   >
-                    {character.name} - {character.media}
+                    {character.name.toUpperCase()}
                   </li>
                 );
               })}
@@ -41,6 +41,9 @@ function App() {
                   setSelectedCharacter(null);
                 }}
               >
+                <h2 className='font-bold '>
+                  from: {selectedCharacter.media}
+                </h2>
                 {selectedCharacter.story}
               </ModalStory>
             )}
