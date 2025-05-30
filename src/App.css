@@ -4,10 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  overflow-x: hidden;
+}
+
 .add-character{
   border-top:1px solid #000;
   margin-top: 30px;
 }
+
 
 form{
   display: flex;
