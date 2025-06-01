@@ -15,11 +15,11 @@ function App() {
 
   return (
     <>
-      <div className="h-screen flex items-center text-center justify-center">
+      <div className="h-screen flex items-center text-center justify-center mt-9">
         {loading && <img src={loadingImg}/>}
         {!loading && (
           <ul>
-            <h1 className="font-bold m-15 text-3xl ">CHARACTERS LIST</h1>
+            <h1 className="font-bold m-15 text-3xl justify-center">CHARACTERS LIST</h1>
             {chars &&
               chars.map((character, index) => {
                 return (
@@ -29,7 +29,7 @@ function App() {
                     setOpenModal(true);
                     setSelectedCharacter(character);
                   }}
-                  className="text-5xl sm:text-6xl text-gray-700 font-bold cursor-pointer w-screen h-[200px] flex items-center justify-between px-12 border-y-2 border-gray-200 hover:bg-gray-100 transition-all duration-300"
+                  className="text-5xl sm:text-6xl text-gray-700 font-bold cursor-pointer w-screen h-[170px] flex items-center justify-between px-12 border-b-2 border-gray-200 hover:bg-gray-100 transition-all duration-300"
                 style={{
                 backgroundImage: `url(${character.image})`,
                 backgroundRepeat: 'no-repeat',
